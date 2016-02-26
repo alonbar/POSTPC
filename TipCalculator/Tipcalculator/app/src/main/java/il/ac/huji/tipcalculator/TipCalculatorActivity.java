@@ -31,13 +31,13 @@ public class TipCalculatorActivity extends Activity {
             public void onClick(View v) {
                 String str = mEdit.getText().toString();
                 if (str.equals("")) {
-                    t.setText("first enter bill value");
+                    t.setText("First enter bill value");
                     return;
                 }
                 double bill = Double.parseDouble(str);
                 String msg;
                 if (bill < 0) {
-                    msg = "Your bill can't be negarive";
+                    msg = "Your bill can't be negative";
                 } else {
                     double tip = bill * 0.12;
                     if (box.isChecked()) {
